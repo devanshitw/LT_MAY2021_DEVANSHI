@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Project</title>
+</head>
+<body>
+<header class="header">
+<a href="#" class="logo"><i class="fas fa-magic"></i>design.</a>
+<div class="fas fa-bars"></div>
+<nav class="navbar">  <ul>
+    <li><a href="index.HTML">home</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="services.html">services</a></li>
+  </ul>
+</nav></header>
+<section id="home" class="home">
+<h1 class="banner">web design & development services</h1>
+<h3 class="slogan">definitely stunning,just like you !!!</h3>
+<a href="#"><button>get started</button></a>
+<div class="wave wave1"></div>
+<div class="wave wave2"></div>
+<div class="wave wave3"></div>
+<div class="fas fa-cog nut1"></div>
+<div class="fas fa-cog nut2"></div>
+</section>
+
+<section id="contact" class="contact">
+<h1 class="heading">contact us</h1>
+<div class="row">
+  <div class="image">
+    <img src="Get in touch-amico.png" alt="">
+  </div>
+  <div class="form-container">
+    <form action="" class="form1">
+      <div class="inputBox">
+        <input type="text" placeholder="first name" required>
+        <input type="text" placeholder="last name" required>
+      </div>
+      <input type="email" placeholder="Email" id="input">
+      <textarea name="" id="" cols="30" rows="10" placeholder="message" required></textarea>
+      <input type="submit" value="send" onclick="ValidateEmail()">
+    </form>
+  </div>
+</div><br><br>
+<div class="row">
+<div class="image">
+  <img src="FAQs-amico.png" alt=""></div>
+        <section class="faq-container">
+            <div class="faq-one">
+                <h1 class="faq-page">How much does a new website cost?</h1>
+                <div class="faq-body">
+                    <p>A website design is quoted based on the needs of each individual project. Every website is unique and requires different components; we design and develop custom websites specifically for your small business. We’ll ask a lot of questions, assess your needs, and give you a quote based on that assessment. Most of our sites run in the $5,000 range, but can be more or less depending on needs.<p>
+                </div>
+            </div>
+            <br>
+            <hr class="hr-line"><br>
+            <div class="faq-two">
+                <h1 class="faq-page">How long will it take to get a new website?	</h1>
+                <div class="faq-body">
+                    <p>On average, we shoot for a six to eight week turnaround, but the pace of any project is set by each client. How much input you can provide during the initial stages, your availability with feedback, how soon the content is ready – all this affects the speed of completion. The functionality needs may also play a role – more complex sites will take more time to develop.</p>
+                </div>
+            </div>
+            <br>
+            <hr class="hr-line"><br>
+            <div class="faq-two">
+                <h1 class="faq-page">Do I have to be local to work with you?		</h1>
+                <div class="faq-body">
+                    <p>Nope! We work with clients all over the world. Our whole team works remotely, allowing us to find the absolute best team for our business.</p>
+                </div>
+            </div>
+</section>
+<script>
+  function ValidateEmail() {
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; 
+    var email=document.getElementById("input");
+    if (email.match(validRegex)) {
+      return true;  
+    } else {  
+      alert("Invalid email address!");  
+      return false;  
+    } 
+  }
+</script>
+<script src="main.js"></script>
+
+</body>
+</html>
